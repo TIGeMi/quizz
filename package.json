@@ -2,12 +2,12 @@
   "name": "quizer",
   "private": true,
   "version": "0.0.1",
-  "predeploy" : "npm run build",
-"deploy" : "gh-pages -d build",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
+    "predeploy" : "npm run build",
+    "deploy" : "gh-pages -d dist",
     "lint": "eslint .",
     "preview": "vite preview"
   },
